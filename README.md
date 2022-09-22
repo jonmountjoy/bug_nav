@@ -1,16 +1,17 @@
-# nav
+`flutter run`
 
-A new Flutter project.
+When going to page 2:
 
-## Getting Started
+```
+[INFO] GoRouter: going to /page2/pv1?q1=qv1
+[INFO] MyNavObserver: didPush: route(page2: {p1: pv1, q1: qv1}), previousRoute= route(/: {q1: qv1})
+[INFO] MyNavObserver: didPop: route(page2: {p1: pv1, q1: qv1}), previousRoute= route(/: {q1: qv1})
+```
 
-This project is a starting point for a Flutter application.
+When going to page 2 alternative:
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+```
+[INFO] GoRouter: going to /page2alternative/pv1?q1=qv1
+[INFO] MyNavObserver: didPush: route(null: null), previousRoute= route(/: {q1: qv1})
+[INFO] MyNavObserver: didPop: route(null: null), previousRoute= route(/: {q1: qv1})
+```
